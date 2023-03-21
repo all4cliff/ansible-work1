@@ -1,4 +1,3 @@
-
 ---
 - name: under Maintenance
   hosts: g1
@@ -8,5 +7,5 @@
   - name: update maintenance
     copy:
       src: maintenance.html
-      dest:/var/www/html/index.html
+      dest: /var/www/html/index.html
 ...
