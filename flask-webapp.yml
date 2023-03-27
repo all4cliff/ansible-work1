@@ -1,0 +1,26 @@
+---
+- name: Configure EC2 for Flask app
+  hosts: <n3>
+  become: true
+  tasks:
+    - name: install python and pip package manager
+      ansible.builtin.apt:
+        name: "{{ item }}"
+        state: present
+        update_cache: true
+        cache_calid_time: 3600
+      loop:
+        - python3
+        - python3-pip
+        - nginx
+    - name: Install Flask and wsgi for it
+      ansible.builtin.pip:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - flask
+        - gunicorn3
+    - name: Execute Script
+  command: python app.py
+  args:
+    chdir: /home/{{ubuntu}}/python_files/
