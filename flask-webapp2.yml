@@ -9,8 +9,8 @@
       name: python3
       state: present
   
-  - name: install python3-pip
+  - name: install pip package manager
     apt:
-      name: python3-pip
+      name: pip package manager
       state: present
 ...
