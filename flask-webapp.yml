@@ -22,7 +22,7 @@
         - gunicorn3
     - name: Execute Script
       command: python app.py
-        args:
-        chdir: /home/{{ubuntu}}/python_files/
+      args: null
+      chdir: /home/{{ubuntu}}/python_files/
 
 ...
