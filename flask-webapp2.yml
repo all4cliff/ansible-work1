@@ -6,11 +6,10 @@
   tasks:
   - name: install python3
     apt:
-      name: python3
-      state: present
-  
-  - name: install pip package manager
-    apt:
-      name: pip package manager
+      packages:   
+     - python3.8-venv
+     - Python3-pip
+     - python3-dev
+     - nginx
       state: present
 ...
