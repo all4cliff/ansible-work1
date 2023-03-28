@@ -8,9 +8,10 @@
     apt:
       name: python3 
       state: present
-  asks:
-  - name: install pip
+ 
+  tasks:
+  - name: install flask with pip
     apt:
-      name: pip
+      name: flask with pip
       state: present
 ...
