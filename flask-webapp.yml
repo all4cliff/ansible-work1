@@ -2,7 +2,7 @@
 - name: Configure EC2 for Flask app
   hosts: n3
   tasks:
-    - name: install python and pip package manager
+    - name: install python3 and pip package manager
       ansible.builtin.apt:
         name: "{{ item }}"
         state: present
