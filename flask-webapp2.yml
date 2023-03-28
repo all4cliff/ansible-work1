@@ -7,7 +7,6 @@
   - name: install python3
     apt:
     packages:   
-     - python3.8-venv
      - Python3-pip
      - python3-dev
      - nginx
