@@ -20,9 +20,6 @@
       loop:
         - flask
         - gunicorn3
-    - name: Execute Script
-      command: python app.py
-      args: null
-      chdir: /home/{{ubuntu}}/python_files/
+   
 
 ...
