@@ -1,0 +1,11 @@
+---
+- name: install python3
+  hosts: n3
+  become: yes
+
+  tasks:
+  - name: install python3
+    apt:
+      name: python3
+      state:
+...
