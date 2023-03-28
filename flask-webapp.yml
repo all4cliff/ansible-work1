@@ -8,7 +8,7 @@
   - name: Upgrade all apt packages
     apt: upgrade=yes force_apt_get=yes
     become: true
-    - name: install python3 and pip package manager
+  - name: install python3 and pip package manager
       ansible.builtin.apt:
         name: "{{ item }}"
         state: present
