@@ -6,6 +6,6 @@
   tasks:
   - name: install python3
     apt:
-      name: python3 and pip package manager
+      name: python3 
       state: present
 ...
